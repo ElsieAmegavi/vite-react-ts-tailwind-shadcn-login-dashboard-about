@@ -83,8 +83,8 @@ export function Login() {
   }
 
   return (
-    <div className="max-w-md mx-auto">
-      <Card className="bg-gray-800/50 border-gray-700">
+    <div className="max-w-lg mx-auto">
+      <Card className="bg-white text-black">
         <CardHeader>
           <CardTitle className="text-2xl text-center">
             Welcome Back
@@ -105,7 +105,7 @@ export function Login() {
                         {...field}
                         type="email"
                         disabled={isLoading}
-                        className="bg-gray-900/50"
+                        className=""
                       />
                     </FormControl>
                     <FormMessage />
@@ -125,7 +125,7 @@ export function Login() {
                         type="password"
                         {...field}
                         disabled={isLoading}
-                        className="bg-gray-900/50"
+                        className=""
                       />
                     </FormControl>
                     <FormMessage />
@@ -135,7 +135,7 @@ export function Login() {
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                className="w-full bg-pink-600 hover:bg-pink-400 rounded-xl"
                 disabled={isLoading}
               >
                 {isLoading ? "Logging in..." : "Login"}
